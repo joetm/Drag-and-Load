@@ -4,6 +4,11 @@
   "name": "Drag and Load",
   "description": "Download images easily by drag & drop.",
   "version": "1.1",
+  "options_ui": {
+      "page": "options.html",
+      "chrome_style": true
+  },
+  "options_page": "options.html",
   "permissions": [
   	"\u003Call_urls\u003E"
   ],
