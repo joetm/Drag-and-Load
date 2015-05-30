@@ -3,33 +3,34 @@
 <head>
 <title>Options - Drag and Load</title>
 <style>
-body: { padding: 10px; }
+body { padding: 0px; }
+div { padding: 5px; }
+input { padding: 5px; }
 </style>
 </head>
 <body>
 
-<h1>Drag and Load Options</h1>
-
 <h2>Image Size</h2>
 
 <div>
-Images below this size will not be downloaded.
+Images below this size will not be downloaded when dragged.
 </div>
 
 <div>
-	<label for="width">Width:</label>
-	<input id="width" name="width" size="3" value="50" />
-	<label for="height">Height:</label>
-	<input id="height" name="height" size="3" value="80" />
+	<label for="w">Width:</label>
+	<input id="w" name="w" size="3" value="" />
+	<label for="h">Height:</label>
+	<input id="h" name="h" size="3" value="" />
 </div>
 
-<div id="status"></div>
+	<input type="submit" id="save_btn" value="Save" />
+	<!--
+	<input type="button" id="cancel_btn" value="Cancel" />
+	-->
 
-<div>
-<input type="submit" id="save_btn" value="Save" />
-</div>
+<span id="status"></span>
 
-<script type="text/javascript" src="options.js"></script>
+<script src="options.js"></script>
 
 </body>
 </html>

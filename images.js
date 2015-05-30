@@ -14,8 +14,8 @@ function dnl_downloadImg(src) {
 
 $(document).on('dragend', 'img', function(e){
 
-	var width = window.localStorage.getItem('width');
-	var height = window.localStorage.getItem('height');
+	var width = window.localStorage.getItem('img_width');
+	var height = window.localStorage.getItem('img_height');
 
 	if(!width) { width = 160; }
 	if(!height) { height = 120; }
