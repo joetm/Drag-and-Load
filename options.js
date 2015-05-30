@@ -1,11 +1,15 @@
-
-//var width = 160;
-//var height = 120;
+/*debugging
+var errorText = document.createElement("div");
+document.body.appendChild(errorText)
+window.onerror = function (msg, file, line, column) {
+  errorText.innerHTML = msg + '<br>' + file + ' ' + line + ':' + column;
+}
+*/
 
 function loadOptions() {
   chrome.storage.sync.get({
-    width: 160,
-    height: 120
+    img_width: 160,
+    img_height: 120
   }, function(items) {
     document.querySelector('#w').value = items.img_width;
     document.querySelector('#h').value = items.img_height;

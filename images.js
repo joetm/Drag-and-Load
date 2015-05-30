@@ -14,13 +14,13 @@ function dnl_downloadImg(src) {
 
 $(document).on('dragend', 'img', function(e){
 
-	var width = window.localStorage.getItem('img_width');
-	var height = window.localStorage.getItem('img_height');
+	var w = window.localStorage.getItem('img_width');
+	var h = window.localStorage.getItem('img_height');
 
-	if(!width) { width = 160; }
-	if(!height) { height = 120; }
+	if(!w) { w = 160; }
+	if(!h) { h = 120; }
 
-	if($(this).width() > width && $(this).height() > height)
+	if($(this).width() > w && $(this).height() > h)
 	{
 	    dnl_downloadImg($(this).attr("src"));
 	}
