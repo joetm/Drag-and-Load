@@ -12,7 +12,7 @@ function dnl_downloadImg(src) {
     document.getElementById("dragnload_image").click();
 }//dnl_downloadImg
 
-$(document).on('dragend', 'img', function(e){
+function dl_img (e) {
 
 	var w = window.localStorage.getItem('img_width');
 	var h = window.localStorage.getItem('img_height');
@@ -25,4 +25,32 @@ $(document).on('dragend', 'img', function(e){
 	    dnl_downloadImg($(this).attr("src"));
 	}
 
-});//dragend
+}//dl_img
+
+function dl_div (e) {
+
+	//check if there is a background image on this div container
+	bg_img_src = false;
+	var match = (window.getComputedStyle(this).getPropertyValue("background-image")).match(/url\(([^)]+)\)/i);
+	if (match) {
+		bg_img_src = match[1];
+	}
+	if (!bg_img_src) {
+		return;
+	}
+
+	//instead of checking image width/height, I check the container width/height
+	var w = window.localStorage.getItem('img_width');
+	var h = window.localStorage.getItem('img_height');
+	if(!w) { w = 160; }
+	if(!h) { h = 120; }
+
+	if($(this).width() > w && $(this).height() > h)
+	{
+	    dnl_downloadImg(bg_img_src);
+	}
+
+}//dl_div
+
+$(document).on('dragend', 'img', dl_img);
+$(document).on('dragend', 'div', dl_div);
