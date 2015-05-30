@@ -11,7 +11,8 @@ v1.3:
 Added the ability to download background images.
 
 v1.2:
-
+The minimum image size can now be configured in the extension's options. Only images with a size greater than this width and height will be downloaded when dragged.
+This helps to prevent the accidental download of thumbnail images.
 
 v1.1:
 Support for webp was dropped (because from time to time, I ended up downloading thumbnails on youtube).
