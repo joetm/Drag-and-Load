@@ -10,7 +10,8 @@
   },
   "permissions": [
   	"\u003Call_urls\u003E",
-  	"storage"
+  	"storage",
+  	"contextMenus"
   ],
   "description": "Download images on web pages by dragging them in any direction and dropping them.",
   "homepage_url": "http://komasurfer.com/",
@@ -18,7 +19,11 @@
       "js": [ "zepto.min.js", "images.js" ],
       "matches": [ "\u003Call_urls\u003E" ],
       "run_at": "document_end"
-   } ],
+   }
+  ],
+  "background": {
+    "scripts": ["contextMenu.js"]
+  },
   "icons": {
       "16": "16.png",
       "19": "19.png",
