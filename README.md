@@ -1,3 +1,5 @@
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/d/ogabdhanjefggbdoiifeekocmdkmbhob.svg)]()
+
 # Drag-and-Load
 Chrome extension to allow saving of images via dragging.
 
