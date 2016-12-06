@@ -1,5 +1,8 @@
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/d/ogabdhanjefggbdoiifeekocmdkmbhob.svg)]()
 
+[Chrome Web Store](https://chrome.google.com/webstore/detail/drag-and-load/ogabdhanjefggbdoiifeekocmdkmbhob)
+
+
 # Drag-and-Load
 Chrome extension to allow saving of images via dragging.
 
@@ -21,6 +24,4 @@ Support for webp was dropped (because from time to time, I ended up downloading 
 
 v1.0:
 Initial release
-
-[Chrome Web Store](https://chrome.google.com/webstore/detail/drag-and-load/ogabdhanjefggbdoiifeekocmdkmbhob)
 
